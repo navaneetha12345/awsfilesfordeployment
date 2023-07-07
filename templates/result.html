@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result Page</title>
+    <style>
+        body {
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            color: blanchedalmond;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: aquamarine;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: beige;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+
+        .value {
+            color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Result</h1>
+
+    <h2>User Input Values:</h2>
+    <ul>
+        <li><span class="label">Gender:</span> <span class="value">{{ gender }}</span></li>
+        <li><span class="label">Age:</span> <span class="value">{{ age }}</span></li>
+        <li><span class="label">Hypertension:</span> <span class="value">{{ hypertension }}</span></li>
+        <li><span class="label">Heart Disease:</span> <span class="value">{{ heart_disease }}</span></li>
+        <li><span class="label">Smoking History:</span> <span class="value">{{ smoking_history }}</span></li>
+        <li><span class="label">BMI:</span> <span class="value">{{ bmi }}</span></li>
+        <li><span class="label">HbA1c Level:</span> <span class="value">{{ HbA1c_level }}</span></li>
+        <li><span class="label">Blood Glucose Level:</span> <span class="value">{{ blood_glucose_level }}</span></li>
+    </ul>
+
+    <h2>Prediction:</h2>
+    <p>{{ prediction }}</p>
+</body>
+</html>
